@@ -15,7 +15,7 @@ Hippocampal neurons encode word meaning in semi-orthogonal subspaces that simult
 Hippocampal trajectory curvature tracks semantic surprisal and predicts cross-modal decoding performance — identifying curvature as the dominant geometric bridge between brain and LLM representations.
 
 **24/7 Foundation Model** · *ongoing*
-Scaling the semantic encoding framework to continuous intracranial recordings across a patient's full hospital stay — 20× the data scale of prior work.
+Collabing for the scaling of the semantic encoding framework to continuous intracranial recordings across a patient's full hospital stay — 20× the data scale of prior work.
 
 ---
 
