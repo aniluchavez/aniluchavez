@@ -8,10 +8,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #0e0e0e;
+    --ink: #011f34;
     --paper: #f5f0e8;
     --cream: #ede7d5;
-    --accent: #c0392b;
+    --accent: #e45fab;
     --muted: #7a7060;
     --border: #d4c9b0;
   }
@@ -42,14 +42,14 @@
   .section-label{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.8rem}
   .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:400;margin-bottom:3rem;line-height:1.2}
   .about{background:var(--ink);color:var(--paper)}
-  .about .section-label{color:#c87a72}
+  .about .section-label{color:#e45fab}
   .about .section-title{color:var(--paper)}
   .about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:5rem;align-items:start}
   .about-text p{font-size:1.05rem;line-height:1.9;margin-bottom:1.4rem;color:#cfc9bc}
   .about-text p strong{color:var(--paper);font-weight:500}
   .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding-top:1rem}
   .stat{border-top:1px solid #2a2a2a;padding-top:1.2rem}
-  .stat-number{font-family:'Playfair Display',serif;font-size:2.2rem;color:#c87a72;line-height:1;margin-bottom:.4rem}
+  .stat-number{font-family:'Playfair Display',serif;font-size:2.2rem;color:#e45fab;line-height:1;margin-bottom:.4rem}
   .stat-label{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#666}
   .research-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:2px}
   .research-card{background:var(--cream);padding:2.5rem;border:1px solid var(--border);transition:all .25s;position:relative;overflow:hidden}
@@ -72,11 +72,11 @@
   .skill-item{font-size:.82rem;padding:.25rem .8rem;background:var(--paper);border:1px solid var(--border);color:var(--ink)}
   .skill-item.expert{border-color:var(--accent);color:var(--accent)}
   .contact{background:var(--ink);color:var(--paper);text-align:center;padding:8rem 4rem}
-  .contact .section-label{color:#c87a72}
+  .contact .section-label{color:#e45fab}
   .contact .section-title{color:var(--paper);margin-bottom:1.5rem}
   .contact-subtitle{color:#888;font-size:1rem;margin-bottom:3rem;max-width:500px;margin-left:auto;margin-right:auto}
   .contact-links{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap}
-  .contact .btn-primary{background:#c87a72;border-color:#c87a72;color:white}
+  .contact .btn-primary{background:#e45fab;border-color:#e45fab;color:white}
   .contact .btn-secondary{color:#888;border-color:#333}
   .contact .btn-secondary:hover{color:var(--paper);border-color:var(--paper)}
   footer{background:#080808;color:#444;text-align:center;padding:2rem;font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.1em}
@@ -85,6 +85,121 @@
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
   .reveal.visible{opacity:1;transform:translateY(0)}
   @media(max-width:900px){nav{padding:1rem 1.5rem}.nav-links{display:none}.hero{grid-template-columns:1fr}.hero-visual{height:50vh}section{padding:4rem 1.5rem}.about-grid{grid-template-columns:1fr;gap:3rem}}
+
+  /* PROJECTS GRID */
+  .projects { background: var(--paper); }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(14,14,14,0.1);
+    border-color: var(--accent);
+  }
+
+  .project-lang {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .project-lang::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .project-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .project-desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.7;
+    flex: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    margin-top: auto;
+  }
+
+  .project-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--paper);
+    border: 1px solid var(--border);
+    padding: 0.2rem 0.6rem;
+    color: var(--muted);
+  }
+
+  .project-link {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s;
+  }
+
+  .project-link:hover { color: var(--accent); }
+  .project-link::after { content: '→'; }
+
+  .project-card.private {
+    opacity: 0.7;
+  }
+
+  .project-card.private .project-link {
+    color: var(--muted);
+    cursor: default;
+  }
+
+  .project-card.private .project-link::after { content: '🔒'; font-size: 0.7rem; }
+
+  @media(max-width:900px) {
+    .projects-grid { grid-template-columns: 1fr; }
+  }
+
 </style>
 </head>
 <body>
@@ -93,6 +208,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#research">Research</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -155,6 +271,66 @@
     </div>
   </div>
 </section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <p class="section-label">Code</p>
+  <h2 class="section-title">Open source work</h2>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <p class="project-lang">Python · MATLAB</p>
+      <h3 class="project-name">hippocampal-speaker-semantics</h3>
+      <p class="project-desc">Ridge-regularized Poisson encoding models linking LLM contextual embeddings to single-neuron firing rates across speaking and listening. Core analysis for the Mirror Manifolds paper (Nature Communications).</p>
+      <div class="project-footer">
+        <span class="project-tag">Nature Comms</span>
+        <a href="https://github.com/aniluchavez/hippocampal-speaker-semantics" class="project-link" target="_blank">View repo</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="project-lang">Python</p>
+      <h3 class="project-name">straighteningthenarrative</h3>
+      <p class="project-desc">Trajectory curvature analysis of hippocampal population dynamics during conversation. Shows that curvature tracks semantic surprisal and is the dominant geometric metric aligning brain and LLM representations.</p>
+      <div class="project-footer">
+        <span class="project-tag">NeurIPS 2026</span>
+        <a href="https://github.com/aniluchavez/straighteningthenarrative" class="project-link" target="_blank">View repo</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="project-lang">Unity · C#</p>
+      <h3 class="project-name">ArtNavigation</h3>
+      <p class="project-desc">Unity-based 3D virtual navigation paradigm integrated with intracranial neural recording systems. Designed for human patients in the EMU — with direct relevance to immersive BCI and prosthetic vision applications.</p>
+      <div class="project-footer">
+        <span class="project-tag">BCI · EMU</span>
+        <span class="project-link">Private repo</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="project-lang">Python · PsychoPy</p>
+      <h3 class="project-name">Trust-Game</h3>
+      <p class="project-desc">Iterated investment game for EMU patients probing social trust — designed to isolate neural correlates of trust formation and reputation tracking during intracranial recording sessions.</p>
+      <div class="project-footer">
+        <span class="project-tag">Social Cognition</span>
+        <a href="https://github.com/aniluchavez/Trust-Game" class="project-link" target="_blank">View repo</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="project-lang">Python · PsychoPy</p>
+      <h3 class="project-name">MysteryMachine</h3>
+      <p class="project-desc">Adapted multi-armed bandit paradigm with one permanently disabled arm — probing exploration/exploitation dynamics and decision-making under uncertainty in human patients.</p>
+      <div class="project-footer">
+        <span class="project-tag">Decision-making</span>
+        <a href="https://github.com/aniluchavez/MysteryMachine" class="project-link" target="_blank">View repo</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <section class="skills" id="skills">
   <p class="section-label">Technical Skills</p>
   <h2 class="section-title">Stack &amp; expertise</h2>
