@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code — Ana G. Chavez</title>
+<meta name="description" content="Code and technical skills of Ana G. Chavez.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="frond" viewBox="0 0 100 100"><path d="M47 100C46 88 46 80 45 72C36 74 22 72 12 62C24 60 36 62 44 64C42 56 40 48 38 42C28 42 18 36 12 26C24 28 34 32 40 36C42 26 44 16 50 4C56 16 58 26 60 36C66 32 76 26 88 22C82 34 70 40 61 44C60 52 58 58 56 64C66 62 78 60 90 66C80 74 66 76 55 72C54 80 54 90 53 100Z"/></symbol>
+    <symbol id="bloom" viewBox="0 0 100 100"><path d="M50 8C62 2 74 10 72 24C84 18 96 28 90 42C100 50 96 66 82 66C86 80 72 92 58 84C54 96 38 98 34 86C20 92 8 80 16 68C2 62 4 44 18 42C12 28 24 16 36 22C36 14 42 10 50 8Z"/></symbol>
+    <symbol id="algae" viewBox="0 0 100 100"><path d="M30 96C34 80 30 66 22 56C16 48 8 46 4 38C14 38 22 44 28 50C26 38 18 28 18 14C26 22 32 34 36 46C38 34 40 20 50 8C50 24 46 38 44 50C52 42 64 36 78 36C70 46 58 50 48 58C58 58 72 62 84 72C70 74 56 70 46 66C44 76 42 88 40 96Z"/></symbol>
+    <symbol id="star" viewBox="0 0 100 100"><polygon points="92.4,50.0 60.6,53.1 87.0,73.8 57.6,58.7 66.9,87.0 52.0,63.9 43.0,98.7 42.5,66.4 18.8,86.0 39.7,56.6 6.5,62.8 37.2,50.0 10.0,38.2 40.7,44.0 22.4,18.1 42.0,32.5 43.1,2.2 52.6,32.1 69.9,6.3 57.8,41.0 86.3,26.7 65.6,45.4"/></symbol>
+    <symbol id="sqr" viewBox="0 0 100 100"><path fill-rule="evenodd" d="M10 12L90 6L94 88L8 92ZM50 30C62 30 70 40 68 52C66 64 56 70 46 68C36 66 30 56 32 46C34 36 40 30 50 30Z"/></symbol>
+    <symbol id="dot" viewBox="0 0 100 100"><path d="M50 6C76 4 96 26 94 52C92 78 72 96 48 94C24 92 4 74 6 48C8 24 26 8 50 6Z"/></symbol>
+  </defs>
+</svg>
+<nav class="top">
+  <a href="index.html" class="nav-name"><svg aria-hidden="true"><use href="#algae"/></svg>Ana G. Chavez</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="code.html" class="active" aria-current="page">Code</a></li>
+  </ul>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <div class="head-cutouts" aria-hidden="true"><svg class="co c-blue k1"><use href="#algae"/></svg><svg class="co c-red k2"><use href="#bloom"/></svg><svg class="co c-red k3"><use href="#star"/></svg><svg class="co c-black k4"><use href="#dot"/></svg></div>
+    <p class="section-label">Code</p>
+    <h1 class="section-title">Open source work</h1>
+    <p class="lede">Analysis code and experimental paradigms from my research, plus the tools I use.</p>
+  </div>
+</header>
+
+<section class="projects" id="projects">
+  <div class="wrap">
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <p class="project-lang">Python · MATLAB</p>
+        <h3 class="project-name">hippocampal-speaker-semantics</h3>
+        <p class="project-desc">Ridge-regularized Poisson encoding models linking LLM contextual embeddings to single-neuron firing rates across speaking and listening. Core analysis for the Mirror Manifolds paper.</p>
+        <div class="project-footer"><span class="project-tag">Nature Comms</span><a href="https://github.com/aniluchavez/hippocampal-speaker-semantics" class="project-link" target="_blank" rel="noopener">View repo</a></div>
+      </div>
+      <div class="project-card reveal">
+        <p class="project-lang">Python</p>
+        <h3 class="project-name">straighteningthenarrative</h3>
+        <p class="project-desc">Trajectory curvature analysis of hippocampal population dynamics during conversation. Shows that curvature tracks semantic surprisal and is the dominant geometric metric aligning brain and LLM representations.</p>
+        <div class="project-footer"><span class="project-tag">NeurIPS 2026</span><a href="https://github.com/aniluchavez/straighteningthenarrative" class="project-link" target="_blank" rel="noopener">View repo</a></div>
+      </div>
+      <div class="project-card private reveal">
+        <p class="project-lang">Unity · C#</p>
+        <h3 class="project-name">ArtNavigation</h3>
+        <p class="project-desc">Unity-based 3D virtual navigation paradigm integrated with intracranial neural recording systems. Designed for human patients in the EMU — with direct relevance to immersive BCI and prosthetic vision applications.</p>
+        <div class="project-footer"><span class="project-tag">BCI · EMU</span><span class="project-link">Private repo</span></div>
+      </div>
+      <div class="project-card reveal">
+        <p class="project-lang">Python · PsychoPy</p>
+        <h3 class="project-name">Trust-Game</h3>
+        <p class="project-desc">Iterated investment game for EMU patients probing social trust — designed to isolate neural correlates of trust formation and reputation tracking during intracranial recording sessions.</p>
+        <div class="project-footer"><span class="project-tag">Social Cognition</span><a href="https://github.com/aniluchavez/Trust-Game" class="project-link" target="_blank" rel="noopener">View repo</a></div>
+      </div>
+      <div class="project-card reveal">
+        <p class="project-lang">Python · PsychoPy</p>
+        <h3 class="project-name">MysteryMachine</h3>
+        <p class="project-desc">Adapted multi-armed bandit paradigm with one permanently disabled arm — probing exploration/exploitation dynamics and decision-making under uncertainty in human patients.</p>
+        <div class="project-footer"><span class="project-tag">Decision-making</span><a href="https://github.com/aniluchavez/MysteryMachine" class="project-link" target="_blank" rel="noopener">View repo</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="wrap">
+    <p class="section-label">Technical Skills</p>
+    <h2 class="section-title">Stack &amp; expertise</h2>
+    <table class="skills-table reveal">
+      <tr><td>Programming</td><td><div class="skill-items"><span class="skill-item expert">Python</span><span class="skill-item expert">MATLAB</span><span class="skill-item">R</span><span class="skill-item">SQL</span><span class="skill-item">C#</span></div></td></tr>
+      <tr><td>ML &amp; Computing</td><td><div class="skill-items"><span class="skill-item expert">PyTorch</span><span class="skill-item expert">TensorFlow</span><span class="skill-item expert">Keras</span><span class="skill-item expert">scikit-learn</span><span class="skill-item expert">NumPy</span><span class="skill-item expert">SciPy</span></div></td></tr>
+      <tr><td>Neural Analysis</td><td><div class="skill-items"><span class="skill-item expert">Statistical modeling</span><span class="skill-item expert">Neural data analysis</span><span class="skill-item expert">Encoding/decoding models</span></div></td></tr>
+      <tr><td>HPC &amp; Infra</td><td><div class="skill-items"><span class="skill-item">SLURM</span><span class="skill-item">joblib</span><span class="skill-item">Hadoop</span><span class="skill-item">Spark</span><span class="skill-item">Amazon EMR</span></div></td></tr>
+      <tr><td>Scientific Tools</td><td><div class="skill-items"><span class="skill-item">EEGLAB</span><span class="skill-item">Brainstorm</span><span class="skill-item">Unity</span><span class="skill-item">PsychoPy</span><span class="skill-item">Psychtoolbox</span><span class="skill-item">LaTeX</span></div></td></tr>
+      <tr><td>Languages</td><td><div class="skill-items"><span class="skill-item">Spanish (native)</span><span class="skill-item">French (conversational)</span></div></td></tr>
+    </table>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Ana G. Chavez &middot; Baylor College of Medicine &middot; Houston, TX</span>
+    <span class="foot-cutouts" aria-hidden="true"><svg class="c-blue"><use href="#frond"/></svg><svg class="c-yellow"><use href="#bloom"/></svg><svg class="c-red"><use href="#star"/></svg><svg class="c-green"><use href="#algae"/></svg></span>
+    <nav class="links" aria-label="Elsewhere">
+      <a href="mailto:anilu.chavez@bcm.edu">Email</a>
+      <a href="https://scholar.google.com/citations?user=yR1IOY4AAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://github.com/aniluchavez" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/ana-chavez-295419186/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
