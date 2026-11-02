@@ -6,7 +6,7 @@ const PUBS = [
    venue:'Nature Communications', note:'Accepted', year:2026, cites:10, thumb:'manifolds', selected:true, highlight:true, first:true,
    url:'https://www.biorxiv.org/content/10.1101/2025.09.20.677504v2', linkText:'Preprint',
    code:'https://github.com/aniluchavez/hippocampal-speaker-semantics',
-   desc:'Hippocampal neurons encode word meaning in semi-orthogonal subspaces that both generalize and differentiate across speaking and listening — across 10 patients and 442 neurons.'},
+   desc:'Hippocampal neurons encode word meaning in semi-orthogonal subspaces that both generalize and differentiate across speaking and listening — across 10 patients and 1450 neurons.'},
   {title:'Neural basis of compositional control',
    authors:["A Chericoni", "JM Fine", "TS Ismail", "G Delgado Salazar", "MC Franch", "E Mickiewicz", "AG Chavez", "E Bartoli", "DL Paulo", "V Krishnan", "M Hegazy", "AM Goldman", "L Lin", "GP Banks", "N Giridharan", "M Hasen", "NR Provenza", "A Watrous", "SBM Yoo", "SA Sheth", "BY Hayden"], url:'https://doi.org/10.1038/s41586-026-10896-8',
    venue:'Nature', year:2026, cites:3, thumb:'compose', selected:true},
