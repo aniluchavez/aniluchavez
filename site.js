@@ -1,7 +1,7 @@
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 /* ---------- publications data (from Google Scholar, Oct 2026) ---------- */
 const PUBS = [
-  {title:'Mirror manifolds: partially overlapping neural subspaces for speaking and listening',
+  {title:'Geometry Supports Aligned Language Representations for Speaking and Listening in Hippocampal Neurons',
    authors:["AG Chavez", "X Yan", "M Franch", "EA Mickiewicz", "W Baltazar", "JL Belanger", "D Devara", "M Etta", "T Hamre", "T Ismail", "B Joiner", "Y Kim", "A Kona", "K Mansourian", "A Nangia", "M Pluenneke", "S Soubra", "T Venkateswaran", "K Venkudusamy", "A Chericoni", "KE Kabotyanski", "KA Katlowitz", "RK Mathura", "T Nigam", "DL Paulo", "H Zhu", "E Bartoli", "NR Provenza", "A Watrous", "K Josić", "SA Sheth", "BY Hayden"],
    venue:'Nature Communications', note:'Accepted', year:2026, cites:10, thumb:'manifolds', selected:true, highlight:true, first:true,
    url:'https://www.biorxiv.org/content/10.1101/2025.09.20.677504v2', linkText:'Preprint',
@@ -40,12 +40,6 @@ const PUBS = [
   {title:'Shared neural geometries for bilingual semantic representations',
    authors:["X Yan", "A Krishna", "KV Arsdel", "I Gautam", "Y Kim", "A Shrivastava", "J Belanger", "AG Chavez", "A Chericoni", "M Franch", "T Ismail", "K Katlowitz", "E Mickiewicz", "D Paulo", "H Zhu", "AM Goldman", "V Krishnan", "A Maheshwari", "E Bartoli", "N Provenza", "SBM Yoo", "BY Hayden", "S Sheth"], url:'https://doi.org/10.1101/2025.11.16.688726',
    venue:'bioRxiv', year:2025, cites:8, thumb:'bilingual2'},
-  {title:'Independent continuous tracking of multiple agents in the human hippocampus',
-   authors:["A Chericoni", "JM Fine", "AG Chavez", "M Franch", "E Mickiewicz", "R Mathura", "J Adkinson", "E Bartoli", "J Jacobs", "N Provenza", "A Watrous", "SBM Yoo", "S Sheth", "BY Hayden"], url:'https://doi.org/10.1101/2025.03.06.641914',
-   venue:'bioRxiv', year:2025, cites:6, thumb:'agents'},
-  {title:'Complementary roles for hippocampus, anterior cingulate cortex, and orbitofrontal cortex in composing continuous choice',
-   authors:["A Chericoni", "JM Fine", "TS Ismail", "G Delgado", "MC Franch", "EA Mickiewicz", "AG Chavez", "E Bartoli", "D Paulo", "NR Provenza", "A Watrous", "SBM Yoo", "SA Sheth", "BY Hayden"], url:'https://doi.org/10.1101/2025.03.17.643774',
-   venue:'bioRxiv', year:2025, cites:4, thumb:'chase'},
   {title:'Plural molecular and cellular mechanisms of pore domain KCNQ2 encephalopathy',
    authors:["TJ Abreo", "EC Thompson", "A Madabushi", "KL Park", "H Soh", "N Varghese", "CG Vanoye", "K Springer", "J Johnson", "S Sims", "Z Ji", "AG Chavez", "MJ Jankovic", "B Habte", "AR Zuberi", "CM Lutz", "Z Wang", "V Krishnan", "L Dudler", "S Einsele-Scholz", "JL Noebels", "AL George", "A Maheshwari", "A Tzingounis", "EC Cooper"], url:'https://doi.org/10.7554/elife.91204',
    venue:'eLife', year:2025, cites:10, thumb:'channel'},
